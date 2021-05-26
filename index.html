@@ -15,49 +15,48 @@
     <h3>Los campos señalados con * son obligatorios</h3>
     <div class="contenedor">
         <div id="form">
-            <form id="formulario">
+            <form id="formulario" action="action.php">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <div class="datos">
 
                         <div class="nombre">
                             <label class="required" for="nombre">Nombre</label>
-                            <input id="nombre" type="text">
+                            <input id="nombre" type="text" />
                         </div>
                         <div class="apellidos">
                             <label class="required" for="apellidos">Apellidos</label>
-                            <input id="apellidos" type="text">
+                            <input id="apellidos" type="text" />
                         </div>
                         <div class="email">
                             <label class="required" for="correo">Correo electrónico</label>
-                            <input id="correo" type="text">
+                            <input id="correo" type="text" />
                         </div>
                         <div class="telefono">
                             <label class="required" for="telefono">Teléfono</label>
-                            <input id="telefono" type="text">
+                            <input id="telefono" type="text" />
                         </div>
                         <div class="foto">
                             <label for="foto">Fotografía para la acreditación</label>
-                            <input id="foto" type="file" accept="image/png, image/gif, image/jpeg">
+                            <input id="foto" type="file" accept="image/png, image/gif, image/jpeg" />
                         </div>
 
                     </div>
                 </fieldset>
-
-                <br>
 
                 <fieldset>
                     <legend>Perfil de participante</legend>
                     <div class="perfil">
 
                         <div class="interes">
-                            <label class="required" for="interesado">¿Por qué está interesado en participar?</label>
+                            <label class="required" for="interes">¿Por qué está interesado en participar?</label>
                             <textarea id="interes" name="texto" rows="7" cols="30"></textarea>
                         </div>
 
                         <div class="actividad">
                             <label class="required" for="actividad">Actividad profesional</label>
                             <select id="actividad" name="actividad">
+                                <option selected="selected">Seleccione una actividad</option>
                                 <option>Estudiante de bachillerato</option>
                                 <option>Estudiante de universitario</option>
                                 <option>Profesor de bachillerato</option>
@@ -72,8 +71,8 @@
                                 Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows) / Command (Mac) mientras hacéis clic a la opciones
                             </p>
 
-                            <select id="taller" name="talleres" multiple>
-                                <option selected>Seleccione una o mas actividades</option>
+                            <select id="taller" name="talleres" multiple="multiple">
+                                <option selected="selected">Seleccione una o mas actividades</option>
                                 <option>La encriptación a lo largo de la historia</option>
                                 <option>Seguridad informática</option>
                                 <option>Redes sociales y teoría de grafos</option>
@@ -88,7 +87,7 @@
 
                             <p class="required">Seleccione una de las tres opciones siguientes:</p>
                             <div class="opcion">
-                                <input type="radio" id="opcion1" name="opcion" value="1">
+                                <input type="radio" id="opcion1" name="opcion" value="1" />
                                 <label for="opcion1">Asistiré los días 4 y 5 de mayo</label>
                             </div>
 
