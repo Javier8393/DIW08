@@ -15,7 +15,7 @@
     <h3>Los campos señalados con * son obligatorios</h3>
     <div class="contenedor">
         <div id="form">
-            <form id="formulario" name="fvalida">
+            <form id="formulario">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <div class="datos">
@@ -32,17 +32,18 @@
                             <label class="required" for="correo">Correo electrónico</label>
                             <input id="correo" type="text">
                         </div>
-                        <div class="telefono tooltip">
+                        <div class="telefono">
                             <label class="required" for="telefono">Teléfono</label>
                             <input id="telefono" type="text">
                         </div>
-                        <div class="foto tooltip">
+                        <div class="foto">
                             <label for="foto">Fotografía para la acreditación</label>
                             <input id="foto" type="file" accept="image/png, image/gif, image/jpeg">
                         </div>
 
                     </div>
                 </fieldset>
+
                 <br>
 
                 <fieldset>
@@ -87,17 +88,17 @@
 
                             <p class="required">Seleccione una de las tres opciones siguientes:</p>
                             <div class="opcion">
-                                <input type="radio" id="opcion1" name="opcion" value="4_y_5_de_mayo">
+                                <input type="radio" id="opcion1" name="opcion" value="1">
                                 <label for="opcion1">Asistiré los días 4 y 5 de mayo</label>
                             </div>
 
                             <div class="opcion">
-                                <input type="radio" id="opcion2" name="opcion" value="4_de_mayo" />
+                                <input type="radio" id="opcion2" name="opcion" value="2" />
                                 <label for="opcion2">Asistiré solo el día 4 de mayo</label>
                             </div>
 
                             <div class="opcion">
-                                <input type="radio" id="opcion3" name="opcion" value="5_de_mayo" />
+                                <input type="radio" id="opcion3" name="opcion" value="3" />
                                 <label for="opcion3">Asistiré solo el día 5 de mayo</label>
                             </div>
 
@@ -108,8 +109,7 @@
 
                 <div class="legal">
                     <input type="checkbox" id="legal" name="legal" value="legal" />
-                    <label class="required" for="legal">He leído y acepto la política de privacidad y el aviso
-                        legal</label>
+                    <label class="required" for="legal">He leído y acepto la política de privacidad y el aviso legal</label>
                 </div>
 
                 <div class="submit">
