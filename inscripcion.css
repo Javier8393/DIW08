@@ -1,77 +1,184 @@
-  form p {
-    float: left;
-    width: 49%;
-  }
-  form p:not(:nth-child(2n)) {
-    margin-right: 2%;
-  }
-  form p:last-child {
-    clear: both;
-    width: 100%;
-  }
-  form p:nth-last-child(2) {
-    clear: both;
-    width: 100%;
-  }
+  /*CSS general*/
   
-  /**************************************/
   body {
-    padding: 1rem;
+      padding: 1rem;
   }
   
-  h1, h3 {
-    text-align: center;
+  h1,
+  h3 {
+      text-align: center;
   }
-
+  
   .contenedor {
-    padding: 0 1rem;
-    margin: 1rem;
-  }
-
-  .form {
-    background: #fff;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    
+      min-width: 300px;
+      margin: 0;
   }
   
-  form label {
-    display: block;
+  .contenedor .form {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
   }
   
-  button,
-  textarea {
-    padding: 1em;
+  .contenedor .form #formulario legend {
+      font-size: 1.3em;
+      border: 2px solid black;
+      padding: 5px;
+      background-color: white;
   }
   
-  button {
-    background: lightgrey;
-    width: 100%;
-    border: 0;
+  .contenedor .form #formulario label {
+      font-size: 1.1em;
+      margin-bottom: 10px;
   }
-
-  button:hover, button:focus {
-    background: gold;
-    outline: 0;
-  }
-
-  input:focus,
-  textarea:focus {
-    outline: 3px solid gold;
+  /*Fieldset de los datos personales*/
+  
+  .datos {
+      margin: 15px 2%;
   }
   
-  textarea {
-    width: 90%;
+  .datos input {
+      height: 40px;
+      width: 100%;
+      font-size: 0.9em;
   }
-  button {
-    width: 100%;
-    border: 1px solid #000;
+  
+  .datos label {
+      display: block;
+      margin-top: 10px;
   }
-
-  .required::after{ 
-    content: "*";
-    margin-left: 3px;
-    color: red;
-    font-weight: bold;
-   }
+  
+  .datos div {
+      position: relative;
+      width: 45%;
+      margin: 10px 2%;
+      display: inline-block;
+  }
+  
+  .datos div:last-child {
+      width: 95%;
+      margin: 0 2% 10px;
+  }
+  
+  .datos div:last-child label {
+      margin: 20px 0 10px;
+  }
+  
+  .datos div:last-child input {
+      width: 100%;
+      padding: 10px 0 0 1%;
+      border: 1px solid gray;
+      border-radius: 2px;
+      background-color: white;
+  }
+  /*Fieldset del perfil del participante*/
+  
+  .perfil {
+      margin: 15px 2%;
+  }
+  
+  .perfil label {
+      display: block;
+      margin-top: 30px;
+      margin-right: 40px;
+  }
+  
+  .perfil div {
+      margin: 15px 0;
+  }
+  
+  .interes {
+      position: relative;
+  }
+  
+  .interes p {
+      font-size: 0.8em;
+      margin: 3px 0 10px;
+      text-align: left;
+  }
+  
+  .interes p:last-child {
+      font-size: 0.8em;
+      text-align: right;
+      margin: 0px 2px;
+  }
+  
+  .interes textarea {
+      width: 99%;
+      resize: vertical;
+      font-size: 1.3em;
+      line-height: 1.3em;
+  }
+  
+  #actividad {
+      padding: 8px;
+  }
+  
+  .talleres p,
+  .profesion p {
+      font-size: 0.8em;
+      margin: 3px 0 10px;
+  }
+  
+  #talleres {
+      padding: 5px;
+      overflow: hidden;
+  }
+  
+  #talleres option {
+      padding: 5px;
+  }
+  
+  .asistencia p {
+      font-size: 1.1em;
+      margin: 30px 0 10px;
+  }
+  
+  .asistencia label {
+      display: unset;
+      cursor: pointer;
+  }
+  
+  .opcion {
+      margin: 5px 0 !important;
+  }
+  
+  .opcion label {
+      font-size: 0.9em !important;
+      margin: 0;
+  }
+  /*aviso legal y boton enviar*/
+  
+  .legal,
+  .submit {
+      text-align: center;
+      margin: 0 0 30px;
+  }
+  
+  #legal {
+      height: 20px;
+      width: 20px;
+      transform: translateY(3px);
+  }
+  
+  .submit input {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      padding: 16px 25px;
+      background-color: gold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 30px;
+  }
+  
+  .submit div {
+      display: inline-block;
+  }
+  
+  .required::after {
+      content: "*";
+      margin-left: 3px;
+      color: red;
+      font-weight: bold;
+  }

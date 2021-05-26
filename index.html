@@ -1,117 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarea para DIW08</title>
-  <link rel="stylesheet" type="text/css" href="./inscripcion.css" media="screen" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tarea para DIW08</title>
+    <link rel="stylesheet" type="text/css" href="./inscripcion.css" media="screen" />
+
 </head>
 
 <body>
-  <h1>Inscripción a las X Jornadas Matemáticas</h1>
-  <h3>Los campos señalados con * son obligatorios</h3>
-  <div class="contenedor">
-    <div class="form">
-      <form action="/action_page.php">
-        <fieldset>
-          <legend>Datos personales</legend>
-          <p>
-            <label class="required" for="nombre">Nombre</label>
-            <input id="nombre" type="text">
-          </p>
-          <p>
-            <label class="required" for="apellidos">Apellidos</label>
-            <input id="apellidos" type="text">
-          </p>
-          <p>
-            <label class="required" for="correo">Correo electrónico</label>
-            <input id="correo" type="text">
-          </p>
-          <p>
-            <label class="required" for="telefono">Teléfono</label>
-            <input id="telefono" type="text">
-          </p>
-          <p>
-            <label for="foto">Fotografía para la acreditación</label>
-            <input id="foto" type="file">
-          </p>
-          <p></p>
-        </fieldset>
 
-        <p></p>
+    <h1>Inscripción a las X Jornadas Matemáticas</h1>
+    <h3>Los campos señalados con * son obligatorios</h3>
+    <div class="contenedor">
+        <div id="form">
+            <form id="formulario" name="fvalida">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="datos">
 
-        <fieldset>
-          <legend>Perfil de participante</legend>
-          <div>
-            <label class="required" for="interesado">¿Por qué está interesado en participar?</label>
-            <textarea id="interesado" name="texto" rows="10"></textarea>
-          </div>
-          <div>
-            <label class="required" for="actividad">Actividad profesional</label>
-            <select id="actividad" name="actividad">
-              <option selected>Seleccione una actividad</option>
-              <option>Estudiante de bachillerato</option>
-              <option>Estudiante de universitario</option>
-              <option>Profesor de bachillerato</option>
-              <option>Profesor universitario</option>
-              <option>Otra actividad profesional</option>
-            </select>
-          </div>
-          <br>
-          <div>
-            <label class="required" for="taller">¿En qué talleres está interesado?</label>
-            <label>
-              Para seleccionar más de una opción,
-              mantened pulsada la tecla Control (Windows) / Command (Mac)
-              mientras hacéis clic a la opciones
-            </label>
-            <br>
-            <select id="taller" name="talleres" multiple>
-              <option selected>Seleccione una o mas actividades</option>
-              <option>La encriptación a lo largo de la historia</option>
-              <option>Seguridad informática</option>
-              <option>Redes sociales y teoría de grafos</option>
-              <option>Matemáticas y azar</option>
-              <option>Problemas matemáticos del milenio</option>
-              <option>La predicción del tiempo</option>
-              <option>Fractales en el aula</option>
-            </select>
-          </div>
-          <br>
+                        <div class="nombre">
+                            <label class="required" for="nombre">Nombre</label>
+                            <input id="nombre" type="text">
+                        </div>
+                        <div class="apellidos">
+                            <label class="required" for="apellidos">Apellidos</label>
+                            <input id="apellidos" type="text">
+                        </div>
+                        <div class="email">
+                            <label class="required" for="correo">Correo electrónico</label>
+                            <input id="correo" type="text">
+                        </div>
+                        <div class="telefono tooltip">
+                            <label class="required" for="telefono">Teléfono</label>
+                            <input id="telefono" type="text">
+                        </div>
+                        <div class="foto tooltip">
+                            <label for="foto">Fotografía para la acreditación</label>
+                            <input id="foto" type="file" accept="image/png, image/gif, image/jpeg">
+                        </div>
 
-          <div>
-            <label class="required">Seleccione una de las tres opciones siguientes:</label>
-            <label for="opcion1"><input type="radio" id="opcion1" name="opcion" value="1">Asistiré los días 4 y 5 de
-              mayo</label>
+                    </div>
+                </fieldset>
+                <br>
 
-            <label for="opcion2"><input type="radio" id="opcion2" name="opcion" value="2">Asistiré solo el día 4 de
-              mayo</label>
+                <fieldset>
+                    <legend>Perfil de participante</legend>
+                    <div class="perfil">
 
-            <label for="opcion3"><input type="radio" id="opcion3" name="opcion" value="3">Asistiré solo el día 5 de
-              mayo</label>
+                        <div class="interes">
+                            <label class="required" for="interesado">¿Por qué está interesado en participar?</label>
+                            <textarea id="interes" name="texto" rows="7" cols="30"></textarea>
+                        </div>
 
-          </div>
+                        <div class="actividad">
+                            <label class="required" for="actividad">Actividad profesional</label>
+                            <select id="actividad" name="actividad">
+                <option>Estudiante de bachillerato</option>
+                <option>Estudiante de universitario</option>
+                <option>Profesor de bachillerato</option>
+                <option>Profesor universitario</option>
+                <option>Otra actividad profesional</option>
+              </select>
+                        </div>
 
-          <br>
-          <label>
-            <input type="checkbox">
-            <span class="required">
-              He leído y acepto la política de privacidad y el aviso
-              legal
-            </span>
-          </label>
-          <br>
-          <p>
-            <button>Enviar</button>
-          </p>
+                        <div class="talleres">
+                            <label class="required" for="taller">¿En qué talleres está interesado?</label>
+                            <p>
+                                Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows) / Command (Mac) mientras hacéis clic a la opciones
+                            </p>
 
-        </fieldset>
-      </form>
+                            <select id="taller" name="talleres" multiple>
+                <option selected>Seleccione una o mas actividades</option>
+                <option>La encriptación a lo largo de la historia</option>
+                <option>Seguridad informática</option>
+                <option>Redes sociales y teoría de grafos</option>
+                <option>Matemáticas y azar</option>
+                <option>Problemas matemáticos del milenio</option>
+                <option>La predicción del tiempo</option>
+                <option>Fractales en el aula</option>
+              </select>
+                        </div>
+
+                        <div class="asistencia">
+
+                            <p class="required">Seleccione una de las tres opciones siguientes:</p>
+                            <div class="opcion">
+                                <input type="radio" id="opcion1" name="opcion" value="4_y_5_de_mayo">
+                                <label for="opcion1">Asistiré los días 4 y 5 de mayo</label>
+                            </div>
+
+                            <div class="opcion">
+                                <input type="radio" id="opcion2" name="opcion" value="4_de_mayo" />
+                                <label for="opcion2">Asistiré solo el día 4 de mayo</label>
+                            </div>
+
+                            <div class="opcion">
+                                <input type="radio" id="opcion3" name="opcion" value="5_de_mayo" />
+                                <label for="opcion3">Asistiré solo el día 5 de mayo</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="legal">
+                    <input type="checkbox" id="legal" name="legal" value="legal" />
+                    <label class="required" for="legal">He leído y acepto la política de privacidad y el aviso legal</label>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" id="submit" value="Enviar" />
+                </div>
+
+            </form>
+
+        </div>
 
     </div>
-
-  </div>
 </body>
 
 </html>
